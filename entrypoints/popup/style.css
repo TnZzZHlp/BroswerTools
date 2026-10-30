@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  color: #202b3a;
+  background: #f3f5f8;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --surface: #fff;
+  --border: #e5e9f0;
+  --muted: #697586;
+  --accent: #246f5a;
+  --site-surface: #edf7f2;
+  --site-border: #d8ebe1;
+  --site-text: #205643;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 368px;
+}
+
+body {
+  margin: 0;
+  width: 368px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+summary,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e5eaf1;
+    background: #141b24;
+    color-scheme: dark;
+    --surface: #1c2633;
+    --border: #303c4c;
+    --muted: #a2afc1;
+    --accent: #6dcbaa;
+    --site-surface: #1b302b;
+    --site-border: #2d5043;
+    --site-text: #a5e1c9;
+  }
+}
